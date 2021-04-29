@@ -3,7 +3,7 @@
 #include <algorithm>
 
 
-void findRanges(std::vector<int> inputList, std::vector<RangeInfo*>& outputList)
+void processRangeInfo(std::vector<int> inputList, std::vector<RangeInfo*>& outputList)
 {
 	int min, max, count = 0; 
 	sort(inputList.begin(), inputList.end());
@@ -27,4 +27,17 @@ void findRanges(std::vector<int> inputList, std::vector<RangeInfo*>& outputList)
 
 	}
 	outputList.push_back(new RangeInfo{ min,max,count });
+}
+
+void findRanges(const std::vector<int>& inputList, std::vector<RangeInfo*>& outputList)
+{
+	if (inputList.empty())
+	{
+		/*ignore if empty input*/
+		return ;
+	}
+	else
+	{
+		processRangeInfo(inputList, outputList);
+	}
 }
