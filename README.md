@@ -45,12 +45,24 @@ Start test-driven development:
 Adapt/adopt/extend the `yml` files from one of your workflow folders.
 
 1. Write the smallest possible failing test.
+   	- commit : [648fc0f6754ee141029b4364885a9f9aaea8bd65](https://github.com/clean-code-craft-tcq-1/current-ranges-cpp-hegde056/commit/648fc0f6754ee141029b4364885a9f9aaea8bd65)
 
 1. Write the minimum amount of code that'll make it pass.
+ 	- commit : [e27d4fe7f08d637ac07704fe1bc9be64ca790ad8](https://github.com/clean-code-craft-tcq-1/current-ranges-cpp-hegde056/commit/e27d4fe7f08d637ac07704fe1bc9be64ca790ad8)
 
 1. Write the next failing test.
+	- commit : [b7fc32194daf195dc777c6c52688f76050806f72](https://github.com/clean-code-craft-tcq-1/current-ranges-cpp-hegde056/commit/b7fc32194daf195dc777c6c52688f76050806f72) 
+ 	- Finally : [4e80d6c915537234342bb9262b1353ef10cb37da](https://github.com/clean-code-craft-tcq-1/current-ranges-cpp-hegde056/commit/4e80d6c915537234342bb9262b1353ef10cb37da) for unresolved failed test
 
 Implement one failing test and at least one passing test:
 
-- _enter the name of a **passing** test
-- _enter the name of a **failing** test
+- Passing Test : 
+	- Finds the Number of consecutive ranges in the given series 
+	- Finds the maximum number in the found ranges in the given series
+	- Finds the minimum number in the found series in the given series
+	- Finds the total count of numbers in each found range in the given series
+	- Finds the minimum when negative temperature is provided
+	- Finds No ranges when No temperature readings provided
+	- Finds single range when single temperature reading provided
+- Failing Test : 
+	- Invalid input Character O input inplace of int 0 temperature reading 
