@@ -2,6 +2,14 @@
 #include <iostream>
 #include <algorithm>
 
+void displayRangeInfo(std::vector<RangeInfo*>& processesedRangeList)
+{
+	cout << "-------------------------------------------" << endl;
+	cout << "Range , Readings" << endl;
+	for (const auto& i : processesedRangeList)
+		cout << i->m_min << "-" << i->m_max << "  ,  " << i->m_numsInRange << endl;
+	cout << "-------------------------------------------" << endl;
+}
 
 void processRangeInfo(std::vector<int> inputList, std::vector<RangeInfo*>& outputList)
 {
@@ -39,5 +47,8 @@ void findRanges(const std::vector<int>& inputList, std::vector<RangeInfo*>& outp
 	else
 	{
 		processRangeInfo(inputList, outputList);
+
+		/*@Todo : Display completion*/
+		displayRangeInfo(outputList);
 	}
 }

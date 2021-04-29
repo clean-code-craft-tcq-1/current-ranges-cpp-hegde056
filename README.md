@@ -52,5 +52,13 @@ Adapt/adopt/extend the `yml` files from one of your workflow folders.
 
 Implement one failing test and at least one passing test:
 
-- Passing Test : Number of Ranges found out of the input numbers. 
+- Passing Test : 
+	- Finds the Number of consecutive ranges in the given series 
+	- Finds the maximum number in the found ranges in the given series
+	- Finds the minimum number in the found series in the given series
+	- Finds the total count of numbers in each found range in the given series
+	- Finds the minimum when negative temperature is provided
+	- Finds No ranges when No temperature readings provided
+	- Finds single range when single temperature reading provided
 - Failing Test : 
+	- Invalid input Character O input inplace of int O temperature reading 
