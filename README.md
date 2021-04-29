@@ -65,4 +65,4 @@ Implement one failing test and at least one passing test:
 	- Finds No ranges when No temperature readings provided
 	- Finds single range when single temperature reading provided
 - Failing Test : 
-	- Invalid input Character O input inplace of int O temperature reading 
+	- Invalid input Character O input inplace of int 0 temperature reading 
