@@ -4,7 +4,7 @@
 #include "current-range.h"
 
 TEST_CASE("Finds the Number of consecutive ranges in the given series") {
-	std::vector<RangeFinder*> ListOfRangeInfo = {};
+	std::vector<RangeInfo*> ListOfRangeInfo = {};
 	findRanges({ 3, 3, 5, 4, 10, 11, 12 }, ListOfRangeInfo);
 	REQUIRE(ListOfRangeInfo.size()==2);
 }

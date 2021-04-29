@@ -3,14 +3,14 @@
 
 using namespace std;
 
-struct RangeFinder
+struct RangeInfo
 {
-	int min;
-	int max;
-	int numsInRange;
+	int m_min;
+	int m_max;
+	int m_numsInRange;
 }; 
 
 
-void findRanges(const std::vector<int>&, std::vector<RangeFinder*>&);
+void findRanges(std::vector<int>, std::vector<RangeInfo*>&);
 
 
